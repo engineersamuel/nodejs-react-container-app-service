@@ -11,7 +11,6 @@ This repository represents a way to structure a backend Node.js application with
   - [Deployment instructions](#deployment-instructions)
     - [Environment Variables](#environment-variables)
     - [Azure Login](#azure-login)
-      - [Create a Resource Group](#create-a-resource-group)
     - [Infrastructure deployment](#infrastructure-deployment)
     - [Build Container Locally](#build-container-locally)
   - [Run Container Locally](#run-container-locally)
@@ -64,10 +63,6 @@ Note that with the exception of the `REGION` you'll likely need to change the ab
 In your terminal run `az login`, once you login the command line will show you all applicable subscriptions.
 
 Find the right subscription and set the subscription you want to deploy the resources to by `az account set -s <subscription-id>`
-
-#### Create a Resource Group
-
-Create the resource group given above if it does not already exist `az group create -l $EXAMPLE_REGION -n $EXAMPLE_RG`.
 
 ### Infrastructure deployment
 
